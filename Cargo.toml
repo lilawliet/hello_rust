@@ -1,0 +1,54 @@
+[package]
+name = "hello-rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+futures = "0.3"
+rayon = "1.10"
+thread = "0.0.1"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "async_thread"
+path = "src/async_thread.rs"
+
+[[bin]]
+name = "sync_counter"
+path = "src/sync_counter.rs"
+
+[[bin]]
+name = "async_task"
+path = "src/async_task.rs"
+
+[[bin]]
+name = "producer_consumer"
+path = "src/producer_consumer.rs"
+
+[[bin]]
+name = "display"
+path = "src/display.rs"
+
+[[bin]]
+name = "t"
+path = "src/t.rs"
+
+[[bin]]
+name = "trait"
+path = "src/trait.rs"
+
+[[bin]]
+name = "option"
+path = "src/option.rs"
+
+[[bin]]
+name = "define_error"
+path = "src/define_error.rs"
+
+[[bin]]
+name = "error_chain"
+path = "src/error_chain.rs"
